@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "zktco-access", "zktco-access\zktco-access.csproj", "{6D24BEC7-36CD-4C14-A4AC-C7238512480B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SDK", "SDK", "{DEA9648B-9831-4B66-9748-EC893BD2554B}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\commpro.dll = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\commpro.dll
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\comms.dll = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\comms.dll
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\CopyAndRegister.bat = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\CopyAndRegister.bat
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\Delete_SDK.bat = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\Delete_SDK.bat
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\IOTCAPIs.dll = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\IOTCAPIs.dll
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\libzklog.dll = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\libzklog.dll
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\p4p.dll = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\p4p.dll
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\p4pcomm.dll = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\p4pcomm.dll
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\plcommpro.dll = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\plcommpro.dll
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\plcomms.dll = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\plcomms.dll
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\plrscagent.dll = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\plrscagent.dll
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\plrscomm.dll = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\plrscomm.dll
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\pltcpcomm.dll = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\pltcpcomm.dll
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\plusbcomm.dll = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\plusbcomm.dll
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\RDTAPIs.dll = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\RDTAPIs.dll
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\Register_SDK.bat = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\Register_SDK.bat
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\rscagent.dll = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\rscagent.dll
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\rscomm.dll = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\rscomm.dll
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\tcpcomm.dll = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\tcpcomm.dll
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\usbcomm.dll = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\usbcomm.dll
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\usbstd.dll = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\usbstd.dll
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\ZKCryptoClient.dll = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\ZKCryptoClient.dll
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\zkemkeeper.dll = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\zkemkeeper.dll
+		..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\zkemsdk.dll = ..\..\..\Pictures\demo_plc_zkteco_qr\demo_plc_zkteco_qr\SDK\zkemsdk.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{0CE23CEF-994F-4DDC-9E83-2FE41A087D01}"
+	ProjectSection(SolutionItems) = preProject
+		db.sql = db.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D24BEC7-36CD-4C14-A4AC-C7238512480B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D24BEC7-36CD-4C14-A4AC-C7238512480B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D24BEC7-36CD-4C14-A4AC-C7238512480B}.Debug|x86.ActiveCfg = Debug|x86
+		{6D24BEC7-36CD-4C14-A4AC-C7238512480B}.Debug|x86.Build.0 = Debug|x86
+		{6D24BEC7-36CD-4C14-A4AC-C7238512480B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D24BEC7-36CD-4C14-A4AC-C7238512480B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D24BEC7-36CD-4C14-A4AC-C7238512480B}.Release|x86.ActiveCfg = Release|x86
+		{6D24BEC7-36CD-4C14-A4AC-C7238512480B}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2691BCD4-0F3F-4A5E-8FD9-E94CF5769BE2}
+	EndGlobalSection
+EndGlobal

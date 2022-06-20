@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>150</x>
+      <y>240</y>
+      <w>160</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>proyecto
+--
+id
+nombre
+descripcion
+dirrecion
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>910</x>
+      <y>280</y>
+      <w>160</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>puertas
+--
+id
+nombre
+descripcion
+dirrecion
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>140</x>
+      <y>680</y>
+      <w>160</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>usuario
+--
+id
+nombre
+rol
+usuario
+contraseña
+creado_por
+proyecto_id</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>580</x>
+      <y>670</y>
+      <w>160</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>persona
+--
+id
+nombre
+fecha
+
+usuario_id
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>270</y>
+      <w>160</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>controlador
+--
+id
+nombre
+descripcion
+dirrecion
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>230</x>
+      <y>360</y>
+      <w>50</w>
+      <h>340</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=n
+m2=1
+esta</panel_attributes>
+    <additional_attributes>10.0;320.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>290</y>
+      <w>280</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=n
+m2=1
+tiene</panel_attributes>
+    <additional_attributes>260.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>710</x>
+      <y>290</y>
+      <w>220</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=4
+m2=1
+controla</panel_attributes>
+    <additional_attributes>200.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>290</x>
+      <y>720</y>
+      <w>310</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n
+registra</panel_attributes>
+    <additional_attributes>10.0;20.0;290.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>730</x>
+      <y>400</y>
+      <w>260</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=n
+m2=n
+abrir</panel_attributes>
+    <additional_attributes>10.0;310.0;240.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>50</x>
+      <y>30</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Admin
+control total</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>130</x>
+      <y>840</y>
+      <w>180</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>accesso a la app
+
+puede registra personas 
+con mismo nivel de acceso</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>220</x>
+      <y>20</y>
+      <w>160</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>admin
+--
+id
+nombre
+usuario
+contraseña
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>230</x>
+      <y>140</y>
+      <w>90</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;100.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>140</y>
+      <w>320</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>300.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>140</y>
+      <w>330</w>
+      <h>550</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>310.0;530.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>370</x>
+      <y>60</y>
+      <w>640</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>620.0;220.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>960</x>
+      <y>560</y>
+      <w>160</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>puertas_personas
+--
+id
+nombre
+descripcion
+dirrecion
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>830</x>
+      <y>570</y>
+      <w>150</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;60.0</additional_attributes>
+  </element>
+</diagram>
