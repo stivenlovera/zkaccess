@@ -9,5 +9,7 @@ namespace zktco_access.Data
 
         }
         public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<Controlador> Controlador { get; set; }
+        public DbSet<Proyecto> Proyecto { get; set; }
     }
 }

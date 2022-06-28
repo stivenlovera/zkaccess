@@ -8,11 +8,27 @@ namespace zktco_access.Controllers.Controlador
     [ApiController]
     public class ControladorController : ControllerBase
     {
+        private Response response;
+        private zkControlador controlador;
+        private readonly DataBaseContext dbContext;
+        private readonly IMapper mapper;
+        public ControladorController(DataBaseContext dbContext, IMapper mapper)
+        {
+            this.dbContext = dbContext;
+            this.mapper = mapper;
+            this.response = new Response();
+            this.controlador = new zkControlador();
+        }
         // GET: api/<ControladorController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<Response> Get()
         {
-            return new string[] { "value1", "value2" };
+            var controlador = await dbContext.Controlador.ToListAsync();
+            var data = mapper.Map<List<controladorDto>>(controlador);
+            this.response.status = "ok";
+            this.response.data = data;
+            this.response.message = "lista de controladores";
+            return this.response;
         }
 
         // GET api/<ControladorController>/5
@@ -24,8 +40,36 @@ namespace zktco_access.Controllers.Controlador
 
         // POST api/<ControladorController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<ActionResult> Post(createControladorDto createControladorDto)
         {
+            var controlador = mapper.Map<Model.Controlador>(createControladorDto);
+            dbContext.Controlador.Add(controlador);
+            await dbContext.SaveChangesAsync();
+            var dto = mapper.Map<controladorDto>(controlador);
+            return new CreatedAtRouteResult("getUsuario", new { id = controlador.id }, dto);
+        }
+
+        // GET api/<ControladorController>/5
+        [HttpGet("{id}/conect")]
+        public async Task<Response> GetConnect(int id)
+        {
+            
+            var controlador = await dbContext.Controlador.FirstOrDefaultAsync(c => c.id == id);
+            
+            bool conect =this.controlador.conexion_controller(controlador.protocolo, controlador.ip_address,controlador.port.ToString(),controlador.timeout.ToString(), controlador.password);
+            if (conect)
+            {
+                this.response.status = "ok";
+                this.response.data = conect;
+                this.response.message = "Conexion exitosa";
+            }
+            else
+            {
+                this.response.status = "error";
+                this.response.data = conect;
+                this.response.message = "Error en la conexion";
+            }
+            return this.response;
         }
 
         // PUT api/<ControladorController>/5

@@ -21,7 +21,7 @@ namespace zktco_access.Controllers
         public static extern int PullLastError();
         // variables
         public string protocolo ="TCP";
-        public string ipaddress = "192.168.1.120";
+        public string ipaddress = "192.168.88.10";
         public string port = "4370";
         public string timeout = "2000";
         public string passwd = "";

@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\zktco-access"
+    "\\zktco-access",
+    "\\zktco-access\\Model"
   ],
+  "SelectedNode": "\\zktco-access\\Model\\Usuario.cs",
   "PreviewInSolutionExplorer": false
 }

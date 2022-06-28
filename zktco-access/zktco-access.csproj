@@ -35,7 +35,6 @@
 
   <ItemGroup>
     <Folder Include="Dtos\Persona\" />
-    <Folder Include="public\" />
   </ItemGroup>
 
   <ItemGroup>
